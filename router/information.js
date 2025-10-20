@@ -6,7 +6,8 @@ router.post('/addtrip',(req,res)=>{
     const newTrip = new trip({
         startlocation: req.body.startlocation,
         destination: req.body.destination,
-        price: req.body.price
+        price: req.body.price,
+        distance: req.body.distance
     });
     newTrip.save()
         .then(() => res.status(201).json({ message: 'Trip added successfully' }))
