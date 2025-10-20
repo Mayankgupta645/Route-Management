@@ -13,7 +13,7 @@ const tripSchemma=new mongoose.Schema({
         },
         distance:{
             type: Number,
-            required:true   
+            
         }
 
 })
