@@ -10,6 +10,10 @@ const tripSchemma=new mongoose.Schema({
         price:{
             type: Number,
             required:true   
+        },
+        distance:{
+            type: Number,
+            required:true   
         }
 
 })
