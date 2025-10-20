@@ -1,20 +1,18 @@
 const express = require('express');
-const cors = require('cors');  
+const cors = require('cors');
 const db = require('./db/db');
-const app = express();
 const informationRouter = require('./router/information');
 const bodyParser = require('body-parser');
 
-app.use(cors());  
+const app = express();
+
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/api', (req, res) => {
-    res.send("welcome to the travel agency price telling");
+  res.send("Welcome to the travel agency API");
 });
 
 app.use('/api', informationRouter);
 
-// app.listen(3000, () => {
-//     console.log("server is running on port 3000");
-// });
-module.exports = app;
+module.exports = app; // ✅ For Vercel
