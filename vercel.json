@@ -15,8 +15,9 @@
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "server.js" },
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/add-route", "dest": "/add-route.html" }
-  ]
+  { "src": "/api/(.*)", "dest": "server.js" },
+  { "src": "/", "dest": "/index.html" },
+  { "src": "/add-route", "dest": "/add-route.html" }
+]
+
 }
